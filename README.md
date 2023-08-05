@@ -1,6 +1,6 @@
 # InteractiveWorldMap
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
+This an interactive world map that uses Worlbank API for an SVG. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7. 
 
 ## Development server
 
