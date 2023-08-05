@@ -1,0 +1,8 @@
+/*Css for worldMap*/
+* {
+    background-color: lightblue;
+}
+/*Color for mousehover to different color/highlight*/
+path:hover {
+    fill: darkorange;
+  }

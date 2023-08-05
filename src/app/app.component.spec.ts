@@ -12,16 +12,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Interactive-World-Map'`, () => {
+  it(`should have as title 'test-map-1'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Interactive-World-Map');
+    expect(app.title).toEqual('test-map-1');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Interactive-World-Map app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('test-map-1 app is running!');
   });
 });
