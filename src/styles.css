@@ -4,41 +4,43 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+
+body {
     font-family: "Poppins", sans-serif;
     background-color: lightgray;
-  }
-  header {
+}
+
+header {
     background-color: black;
     color: white;
     text-align: center;
     padding-bottom: 1%;
     padding-top: 1%;
-  }
+}
 
-  footer {
+footer {
     width: 100%;
     text-align: center;
-  }
-  
-  .container {
-    max-width: 45%;
-    min-width:400px;
-    max-height: 40%;
+}
+
+.container {
+    max-width: 90%;
     margin: 30px auto;
     overflow: auto;
     border: 1px solid black;
-    padding: 80px;
-    padding-bottom:2%;
+    padding: 2% 2% 1% 2%;
     border-radius: 5px;
-    display: block;
-    margin-bottom: 1%;
+    display: flex;
     background-color: white;
-  }
+}
 
- .worldMap {
-  margin-bottom: 30px;
- }
+.container > div {
+    flex: 1;
+    padding: 0 10px;
+}
 
+.worldMap {
+    margin-bottom: 30px;
+    width: 100%;
+}

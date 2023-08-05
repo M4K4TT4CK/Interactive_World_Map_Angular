@@ -1,24 +1,26 @@
-<header>
-  <h1>
-    <strong>Interactive World Map</strong>
-  </h1>
-</header>
 <div class="container">
-  <div>
-    <div>
-      <app-worldMap (svgIdenSelect)="selectSvgId = $event" (capitalSelect)="selectCapital = $event"
-        (regionSelect)="selectRegion = $event" (incomeSelect)="selectIncome = $event"
-        (latSelect)="selectLat = $event" (longSelect)="selectLong = $event"></app-worldMap>
+  <div style="display: flex;">
+    <div style="flex: 1;">
+      <header>
+        <h1>
+          <strong>Interactive World Map</strong>
+        </h1>
+      </header>
+      <div class="worldMap">
+        <app-worldMap (svgIdenSelect)="selectSvgId = $event" (capitalSelect)="selectCapital = $event"
+          (regionSelect)="selectRegion = $event" (incomeSelect)="selectIncome = $event"
+          (latSelect)="selectLat = $event" (longSelect)="selectLong = $event"></app-worldMap>
+      </div>
     </div>
-    <div>
+    <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
       <table>
-        <app-countryInformation [countryId]="selectSvgId" [countryCap]="selectCapital" [countryRegion]="selectRegion"
-          [countryIncome]="selectIncome" [countryLat]="selectLat"
+        <app-countryInformation [countryId]="selectSvgId" [countryCap]="selectCapital"
+          [countryRegion]="selectRegion" [countryIncome]="selectIncome" [countryLat]="selectLat"
           [countryLong]="selectLong"></app-countryInformation>
       </table>
     </div>
   </div>
 </div>
 <div>
-  <footer>API retrived from: <a href="https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-basic-call-structures">worldbank.com</a></footer>
+  <footer>API retrieved from: <a href="https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-basic-call-structures">worldbank.com</a></footer>
 </div>
