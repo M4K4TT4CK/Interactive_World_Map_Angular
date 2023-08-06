@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WorldMapComponent } from './components/worldMap/worldMap.component';
 
 const routes: Routes = [
+    // default path
     { path: '', component: WorldMapComponent}
 ];
 
