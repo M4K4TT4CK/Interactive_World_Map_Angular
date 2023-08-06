@@ -5,7 +5,7 @@ import { WorldbankApiService } from './worldbank-api.service';
 import { WorldMapComponent } from './components/worldMap/worldMap.component';
 import { CountryInformationComponent } from './components/countryInformation/countryInformation.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
